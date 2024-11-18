@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">app_spark</string>
+    <string name="title_activity_main">app_spark</string>
+    <string name="package_name">app.spark.byrayo</string>
+    <string name="custom_url_scheme">app.spark.byrayo</string>
+</resources>

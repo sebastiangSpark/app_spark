@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "574443604182",
+    "project_id": "push-notifications-a01ad",
+    "storage_bucket": "push-notifications-a01ad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574443604182:android:4b2e60c97c5b7063bf2177",
+        "android_client_info": {
+          "package_name": "app.spark.byrayo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL4CCxAo68R8bzt4tyHF2-W9SyCw_jiAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
