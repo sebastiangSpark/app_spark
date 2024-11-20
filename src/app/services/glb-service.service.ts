@@ -11,6 +11,10 @@ export class GlbServiceService {
     if(this.platform.is('capacitor')) this.initPushNotifications();
   }
 
+  prueba(){
+    console.log('Initializing HomePage');
+  }
+
   initPushNotifications() {
     console.log('Initializing HomePage');
 
