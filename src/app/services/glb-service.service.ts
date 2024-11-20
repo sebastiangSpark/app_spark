@@ -1,14 +1,35 @@
 import { Injectable } from '@angular/core';
 import { ActionPerformed, PushNotificationSchema, PushNotifications, Token } from '@capacitor/push-notifications';
 import { Platform } from '@ionic/angular';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GlbServiceService {
 
-  constructor(public platform: Platform) {
+  constructor(public platform: Platform, private http: HttpClient) {
     if(this.platform.is('capacitor')) this.initPushNotifications();
+  }
+
+  private getHeader(): HttpHeaders {
+    return new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${1234}`
+    });
+  } 
+
+  get(path: string, body: any = {}): Observable<any>{
+    return this.http.get(`ss${path}`, {
+      headers: this.getHeader()
+    });
+  }
+
+  post(path: string, body: any): Observable<any>{
+    return this.http.post(`ss${path}`, body, {
+      headers: this.getHeader()
+    });
   }
 
   initPushNotifications() {
