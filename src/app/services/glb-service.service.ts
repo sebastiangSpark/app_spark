@@ -13,6 +13,9 @@ export class GlbServiceService {
     if(this.platform.is('capacitor')) this.initPushNotifications();
   }
 
+  prueba(){
+    console.log('Initializing HomePage');
+  }
   private getHeader(): HttpHeaders {
     return new HttpHeaders({
       'Content-Type': 'application/json',
