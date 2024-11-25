@@ -9,19 +9,19 @@ const routes: Routes = [
     children: [
       {
         path: 'bonos',
-        loadChildren: () => import('../bonos/bonos.module').then(m => m.BonosPageModule)
+        loadChildren: () => import('../pages/bonos/bonos.module').then(m => m.BonosPageModule)
       },
       {
         path: 'formulario',
-        loadChildren: () => import('../formulario/formulario.module').then(m => m.FormularioPageModule)
+        loadChildren: () => import('../pages/formulario/formulario.module').then(m => m.FormularioPageModule)
       },
       {
         path: 'perfil',
-        loadChildren: () => import('../perfil/perfil.module').then(m => m.PerfilPageModule)
+        loadChildren: () => import('../pages/perfil/perfil.module').then(m => m.PerfilPageModule)
       },
       {
         path: 'home',
-        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+        loadChildren: () => import('../pages/home/home.module').then(m => m.HomePageModule)
       },
       {
         path: '', redirectTo: '/home', pathMatch: 'full'
